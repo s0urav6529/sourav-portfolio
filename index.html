@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sourav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Jr. Software Engineer</p>
+                <h1>Hi, I'm <span>Sourav Majumder</span><br>From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------About------------------->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/myPhoto.jpg">
+                </div>
+                <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> Hello, i am Sourav Majumder. A tech enthusiast and a problem solver.Currently working as a Jr. Software Engineer.I have a keen interest
+                            in data structures & web developing. I continue to learn new technical concepts and gain valuable experiences</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('Education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li> 
+                                <span>Problem Solving</span>
+                                <br><br>
+                                Almost (2300+ and counting) Data structure & Mathematical related problems solved on several online
+                                platform & participated almost 250+ online & offline contests on several platform.
+                                <br><br>
+                                Codeforces Max-rating 1421. Handle: s0urav6529 <br>
+                                Codechef Max-rating 1681. Handle: codepro16
+                            </li>
+                            <li> 
+                                <span>Web Development</span>
+                                <br><br>
+                                Language - C++(Advanced), python, JavaScript <br>
+                                Framework - React(basic), NodeJS & ExpressJS <br>
+                                Database -  MySQL, Firebase & MongoDB. <br>
+                                Developers Tools -  Git, GitHub, Docker, Visual Stdio & Eclipse <br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li> 
+                                <span>Jr. Software Engineer (Backend) @Smart Field Service</span>
+                                <br><br>
+                                Contribute to build Real life software, build API’s & perform software testing. Work with JavaScript,
+                                NodeJS, ExpressJS, python & different database like (mongodb, mysql, firebase).
+                            </li>
+                            <li> 
+                                <span> Industrial Attachment / Academic Internship @Brain Station 23</span>
+                                <br><br>
+                                Gathered knowledge about office environment and software company.Developed communication,
+                                networking and collaborate with professional software engineers.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li> 
+                                <span>Dhaka University of Engineering & Technology (DUET)</span>
+                                <br><br>
+                                BSc, Computer Science and Engineering <br>CGPA : 3.71 / 4.00
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    
+</body>
+</html>
