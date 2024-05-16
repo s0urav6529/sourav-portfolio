@@ -14,17 +14,20 @@
         <div class="container">
             <nav>
                 <img src="images/logo.jpg" class="logo" alt="">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
+                <h1>Hi, I'm <span>Sourav Majumder</span></h1>
                 <p>Jr. Software Engineer</p>
-                <h1>Hi, I'm <span>Sourav Majumder</span><br>From Bangladesh</h1>
             </div>
         </div>
     </div>
@@ -144,10 +147,42 @@
                     <br><a href="#">Visit site</a>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
      <!--------------Contact------------------->
+
+     <div id="contact">
+        <div class="container">
+           <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sourav.cse18.duet@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 01863599784</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/s0urav6529/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/s0urav6529"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a id= "resume" href="images/Sourav Majumder Resume.pdf" download class="btn resume">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+           </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Sourav Majumder</p>
+        </div>
+     </div>
 
     <script>
 
@@ -167,6 +202,36 @@
         }
 
     </script>
-    
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG5wsi9rdFurbpxmzbSxh3sAQ-hsoL0YZCwdPTsv4wYyUgHwqwRaqbKAKvCvADhit5/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully !"
+                setTimeout(function(){
+                    msg.innerHTML = "";   
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
