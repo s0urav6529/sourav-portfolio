@@ -142,6 +142,14 @@ nav ul li a:hover::after{
     font-size: 20px;
 }
 
+.tab-contents ul li a{
+    color: mediumaquamarine;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
 .tab-contents{
     display: none;
 }
