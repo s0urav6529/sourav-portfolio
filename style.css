@@ -432,14 +432,43 @@ nav ul li a:hover::after{
 }
 
 .services-list div i{
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 5px;
 }
+
+.services-list div i.fa-js{
+    color: yellow;
+}
+
+.services-list div i.fa-node{
+    color: green;
+}
+
+.services-list div i.fa-react{
+    color: cyan;
+}
+
+.services-list div i.fa-php{
+    color: lightblue;
+}
+.services-list div i.fa-laravel{
+    color: red;
+}
+
 
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+}
+
+.services-list div h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 50px;
 }
 
 .services-list div a{
