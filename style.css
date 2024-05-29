@@ -88,7 +88,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 90%;
-    height: 90%;
+    height: 100%;
     border-radius: 15px;
 }
 
@@ -148,7 +148,259 @@ nav ul li a:hover::after{
     text-decoration: none;
 }
 
+.tab-contents ul li i {
+    margin-left: 10px;
+    margin-right: .2em; /* Adjust this value as needed */
+}
 
+.tab-contents ul li {
+    position: relative;
+}
+
+.tab-contents ul li .fa-js {
+    color: yellowgreen;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-js:hover {
+    color: yellow;
+}
+
+.tab-contents ul li .fa-js:hover::after {
+    content: 'JavaScript';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.tab-contents ul li .fa-python {
+    color: skyblue;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-python:hover {
+    color: blue;
+}
+
+.tab-contents ul li .fa-python:hover::after {
+    content: 'Python';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tab-contents ul li .fa-php {
+    color: lightblue;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-php:hover {
+    color: cyan;
+}
+
+.tab-contents ul li .fa-php:hover::after {
+    content: 'Php';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tab-contents ul li .fa-node {
+    color: lightgreen;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-node:hover {
+    color: green;
+}
+
+.tab-contents ul li .fa-node:hover::after {
+    content: 'Node .js';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tab-contents ul li .fa-react {
+    color: lightcyan;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-react:hover {
+    color: cyan;
+}
+
+.tab-contents ul li .fa-react:hover::after {
+    content: 'React';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tab-contents ul li .fa-git {
+    color: lightcoral;
+    font-size: 40px;
+    transition: color 0.3s;
+    
+}
+
+.tab-contents ul li .fa-git:hover {
+    color: orange;
+}
+
+.tab-contents ul li .fa-git:hover::after {
+    content: 'Git';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.tab-contents ul li .fa-github {
+    color: gray;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-github:hover {
+    color: lightblue;
+}
+
+.tab-contents ul li .fa-github:hover::after {
+    content: 'Github';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.tab-contents ul li .fa-docker {
+    color: lightblue;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-docker:hover {
+    color: darkblue;
+}
+
+.tab-contents ul li .fa-docker:hover::after {
+    content: 'docker';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.tab-contents ul li .fa-laravel {
+    color: orange;
+    font-size: 40px;
+    transition: color 0.3s;
+}
+
+.tab-contents ul li .fa-laravel:hover {
+    color: orangered;
+}
+
+.tab-contents ul li .fa-laravel:hover::after {
+    content: 'Laravel';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    
+}
 
 .tab-contents{
     display: none;
