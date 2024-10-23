@@ -1,49 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #080808;
     color: #fff;
 }
 
-#header{
+#header {
     width: 100%;
     height: 70vh;
 }
-.container{
+
+.container {
     padding: 5px 5px 100px 50px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     width: 140px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 35px 50px 10px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -53,71 +57,77 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     padding: 50px 0;
     font-size: 25px;
     text-align: center;
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 40px;
     margin-top: 20px;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: #ff004f;
 }
 
 /*--------------About me-------------------*/
 
-#about{
+#about {
     padding: 10px 0;
     color: #ababab;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1{
+
+.about-col-1 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 90%;
     height: 100%;
     border-radius: 15px;
 }
 
-.about-col-2{
+.about-col-2 {
     flex-basis: 65%;
 }
 
-.sub-title{
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
+
 .about-col-2 p {
     font-size: 18px;
 }
 
-.tab-titles{
+.tab-titles {
     display: flex;
-    margin:  20px 0px 40px;
+    margin: 20px 0px 40px;
 }
 
-.tab-links{
+.tab-links {
     margin-right: 50px;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
@@ -128,21 +138,21 @@ nav ul li a:hover::after{
     transition: .5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 70%;
 }
 
-.tab-contents ul li{
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li span {
     color: #b54769;
     font-size: 20px;
 }
 
-.tab-contents ul li a{
+.tab-contents ul li a {
     color: mediumaquamarine;
     font-size: 16px;
     text-decoration: none;
@@ -150,7 +160,8 @@ nav ul li a:hover::after{
 
 .tab-contents ul li i {
     margin-left: 10px;
-    margin-right: .2em; /* Adjust this value as needed */
+    margin-right: .2em;
+    /* Adjust this value as needed */
 }
 
 .tab-contents ul li {
@@ -161,10 +172,12 @@ nav ul li a:hover::after{
     color: yellowgreen;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-js:hover {
     color: yellow;
+    position: relative;
 }
 
 .tab-contents ul li .fa-js:hover::after {
@@ -182,6 +195,7 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 
@@ -189,10 +203,12 @@ nav ul li a:hover::after{
     color: skyblue;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-python:hover {
     color: blue;
+    position: relative;
 }
 
 .tab-contents ul li .fa-python:hover::after {
@@ -210,16 +226,19 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 .tab-contents ul li .fa-php {
     color: lightblue;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-php:hover {
     color: cyan;
+    position: relative;
 }
 
 .tab-contents ul li .fa-php:hover::after {
@@ -237,16 +256,19 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 .tab-contents ul li .fa-node {
     color: lightgreen;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-node:hover {
     color: green;
+    position: relative;
 }
 
 .tab-contents ul li .fa-node:hover::after {
@@ -264,16 +286,19 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 .tab-contents ul li .fa-react {
     color: lightcyan;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-react:hover {
     color: cyan;
+    position: relative;
 }
 
 .tab-contents ul li .fa-react:hover::after {
@@ -291,18 +316,22 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 .tab-contents ul li .fa-git {
     color: lightcoral;
     font-size: 40px;
     transition: color 0.3s;
-    
+    position: relative;
+
 }
 
 .tab-contents ul li .fa-git:hover {
     color: orange;
+    position: relative;
 }
+
 
 .tab-contents ul li .fa-git:hover::after {
     content: 'Git';
@@ -319,16 +348,19 @@ nav ul li a:hover::after{
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
+    z-index: 1;
 }
 
 .tab-contents ul li .fa-github {
     color: gray;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-github:hover {
     color: lightblue;
+    position: relative;
 }
 
 .tab-contents ul li .fa-github:hover::after {
@@ -345,6 +377,36 @@ nav ul li a:hover::after{
     color: black;
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.tab-contents ul li .fa-gitlab {
+    color: gray;
+    font-size: 40px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.tab-contents ul li .fa-gitlab:hover {
+    color: lightblue;
+    position: relative;
+}
+
+.tab-contents ul li .fa-gitlab:hover::after {
+    content: 'Gitlab';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: black;
+    white-space: nowrap;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 
@@ -352,10 +414,12 @@ nav ul li a:hover::after{
     color: lightblue;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-docker:hover {
     color: darkblue;
+    position: relative;
 }
 
 .tab-contents ul li .fa-docker:hover::after {
@@ -372,17 +436,20 @@ nav ul li a:hover::after{
     color: black;
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    
+    z-index: 1;
+
 }
 
 .tab-contents ul li .fa-laravel {
     color: orange;
     font-size: 40px;
     transition: color 0.3s;
+    position: relative;
 }
 
 .tab-contents ul li .fa-laravel:hover {
     color: orangered;
+    position: relative;
 }
 
 .tab-contents ul li .fa-laravel:hover::after {
@@ -399,79 +466,82 @@ nav ul li a:hover::after{
     color: black;
     white-space: nowrap;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    
+    z-index: 1;
+
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
 
 /*--------------My services-------------------*/
 
-#services{
+#services {
     padding: 10px 0;
 }
 
-.services-list{
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     margin-top: 20px;
 }
 
-.services-list div{
+.services-list div {
     background: #262626;
     padding: 20px 10px;
     font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
-    transition:  transform 0.5s;
+    transition: transform 0.5s;
 }
 
-.services-list div i{
+.services-list div i {
     font-size: 40px;
     margin-bottom: 20px;
     margin-left: 50px;
     margin-right: 5px;
 }
 
-.services-list div i.fa-js{
+.services-list div i.fa-js {
     color: yellow;
 }
 
-.services-list div i.fa-node{
+.services-list div i.fa-node {
     color: green;
 }
 
-.services-list div i.fa-react{
+.services-list div i.fa-react {
     color: cyan;
 }
 
-.services-list div i.fa-php{
+.services-list div i.fa-php {
     color: lightblue;
 }
-.services-list div i.fa-laravel{
+
+.services-list div i.fa-laravel {
     color: red;
 }
 
 
-.services-list div h2{
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div h3{
+.services-list div h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
     margin-left: 50px;
 }
 
-.services-list div a{
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -479,7 +549,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.services-list div:hover{
+.services-list div:hover {
     background: #808080;
     transform: translateY(-10px);
 }
@@ -487,38 +557,38 @@ nav ul li a:hover::after{
 
 /*--------------My works-------------------*/
 
-#works{
+#works {
     padding: 10px 0;
 }
 
-.works-list{
+.works-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     margin-top: 20px;
 }
 
-.works-list div{
+.works-list div {
     background: #262626;
     padding: 20px 10px;
     font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
-    transition:  transform 0.5s;
+    transition: transform 0.5s;
 }
 
-.works-list div i{
+.works-list div i {
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.works-list div h2{
+.works-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.works-list div a{
+.works-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
@@ -526,12 +596,12 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 
-.works-list div:hover{
+.works-list div:hover {
     background: #CD5C5C;
     transform: translateY(-10px);
 }
 
-.btn{
+.btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
@@ -543,7 +613,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #ff004f;
 
 }
@@ -551,23 +621,25 @@ nav ul li a:hover::after{
 
 /*--------------Contact-------------------*/
 
-.contact-left{
+.contact-left {
     flex-basis: 35%;
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
 
-.contact-left p i{
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
 
-.social-icons{
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -576,26 +648,28 @@ nav ul li a:hover::after{
     transition: transform .5s;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
 
-.btn.resume{
+.btn.resume {
     display: inline-block;
     background: #ff004f;
 }
 
 
-.contact-right{
+.contact-right {
     flex-basis: 60%;
 }
 
 
-.contact-right form{
+.contact-right form {
     width: 100%;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 90%;
     border: 0;
     outline: none;
@@ -606,20 +680,22 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .submit{
+
+form .submit {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
-.btn.submit{
+
+.btn.submit {
     display: inline-block;
     background: #ff004f;
 }
 
 /*--------------Copyright-------------------*/
 
-.copyright{
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -628,30 +704,33 @@ form .submit{
     margin-top: 20px;
 }
 
-nav .fa-solid{
+nav .fa-solid {
     display: none;
 }
 
-#msg{
-   color: #61b752;
-   margin-top: -40px;
-   display: block; 
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
 
 /*--------------css for small screen-------------------*/
-@media only screen and (max-width : 600px){
-    .header-text{
+@media only screen and (max-width : 600px) {
+    .header-text {
         margin-top: 40%;
         font-size: 22px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 25px;
     }
-    nav .fa-solid{
+
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -662,40 +741,43 @@ nav .fa-solid{
         z-index: 2;
         transition: right .5s;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
 
-    nav ul .fa-solid{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
 
-    .sub-title{
+    .sub-title {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2{
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
-    .about-col-1{
+    .about-col-1 {
         margin-bottom: 30px;
     }
 
-    .about-col-2 p{
+    .about-col-2 p {
         font-size: 14px;
     }
 
-    .tab-contents ul li{
+    .tab-contents ul li {
         font-size: 14px;
         margin-right: 14px;
     }
 
-    .contact-left, .contact-right{
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 }
