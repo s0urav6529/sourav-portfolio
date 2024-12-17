@@ -63,7 +63,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    padding: 50px 0;
+    padding: 10px 0 !important;
     font-size: 25px;
     text-align: center;
 }
@@ -80,7 +80,7 @@ nav ul li a:hover::after {
 /*--------------About me-------------------*/
 
 #about {
-    padding: 10px 0;
+    padding: 80px 0 !important;
     color: #ababab;
 }
 
