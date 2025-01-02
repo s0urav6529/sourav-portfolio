@@ -8,6 +8,7 @@
     <link rel="icon" href="images/favicon.png" type="image/webp" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/s0urav6529/sourav-portfolio/style.css"> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
@@ -98,48 +99,48 @@
                             </li>
                             <li class="web-development">
                                 <h2>Experts In:</h2><br>
-                                
+
                                 <div class="category">
-                                  <div class="icons">
-                                    <span class="tick">✅</span>
-                                    <i class="fa-brands fa-cplusplus"></i>
-                                    <i class="fa-brands fa-php"></i>
-                                    <i class="fa-brands fa-python"></i>
-                                    <i class="fa-brands fa-js"></i>
-                                  </div>
+                                    <div class="icons">
+                                        <span class="tick">✅</span>
+                                        <i class="fa-brands fa-cplusplus"></i>
+                                        <i class="fa-brands fa-php"></i>
+                                        <i class="fa-brands fa-python"></i>
+                                        <i class="fa-brands fa-js"></i>
+                                    </div>
                                 </div>
-                              
+
                                 <div class="category">
-                                  <div class="icons">
-                                    <span class="tick">✅</span>
-                                    <i class="fa-brands fa-react"></i>
-                                    <i class="fa-brands fa-node"></i>
-                                    <span class="framework-name">Express.js</span>
-                                    <i class="fa-brands fa-laravel"></i>
-                                    <span class="framework-name">Django</span>
-                                  </div>
+                                    <div class="icons">
+                                        <span class="tick">✅</span>
+                                        <i class="fa-brands fa-react"></i>
+                                        <i class="fa-brands fa-node"></i>
+                                        <span class="framework-name">Express.js</span>
+                                        <i class="fa-brands fa-laravel"></i>
+                                        <span class="framework-name">Django</span>
+                                    </div>
                                 </div>
-                              
+
                                 <div class="category">
-                                  <div class="icons">
-                                    <span class="tick">✅</span>
-                                    <span class="database-name">MySQL</span>
-                                    <span class="database-name">Firebase</span>
-                                    <span class="database-name">MongoDB</span>
-                                    <span class="database-name">PostgreSQL</span>
-                                  </div>
+                                    <div class="icons">
+                                        <span class="tick">✅</span>
+                                        <span class="database-name">MySQL</span>
+                                        <span class="database-name">Firebase</span>
+                                        <span class="database-name">MongoDB</span>
+                                        <span class="database-name">PostgreSQL</span>
+                                    </div>
                                 </div>
-                              
+
                                 <div class="category">
-                                  <div class="icons">
-                                    <span class="tick">✅</span>
-                                    <i class="fa-brands fa-git"></i>
-                                    <i class="fa-brands fa-github"></i>
-                                    <i class="fa-brands fa-gitlab"></i>
-                                    <i class="fa-brands fa-docker"></i>
-                                  </div>
+                                    <div class="icons">
+                                        <span class="tick">✅</span>
+                                        <i class="fa-brands fa-git"></i>
+                                        <i class="fa-brands fa-github"></i>
+                                        <i class="fa-brands fa-gitlab"></i>
+                                        <i class="fa-brands fa-docker"></i>
+                                    </div>
                                 </div>
-                              </li>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="Experience">
@@ -337,9 +338,13 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Sourav Majumder</p>
+            <p>Copyright <i class="fa-regular fa-copyright"></i> <span id="year"></span> Sourav Majumder</p>
         </div>
     </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
 
