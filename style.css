@@ -260,7 +260,7 @@ nav ul li a:hover::after {
 
 .web-development {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #b54769;
 }
 
@@ -278,7 +278,7 @@ nav ul li a:hover::after {
 .category .icons i,
 .category .framework-name,
 .category .database-name {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .category .framework-name,
