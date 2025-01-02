@@ -12,6 +12,7 @@ html {
 body {
     background: #080808;
     color: #fff;
+    padding: 0px 20px;
 }
 
 #header {
@@ -26,6 +27,7 @@ body {
 nav {
     display: flex;
     align-items: center;
+    height: 80px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -34,10 +36,17 @@ nav {
     width: 140px;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 35px 50px 10px;
+    padding: 0px 15px;
 }
 
 nav ul li a {
@@ -104,6 +113,13 @@ nav ul li a:hover::after {
     flex-basis: 65%;
 }
 
+.about-description {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 1000px;
+    color: #fff;
+}
+
 .sub-title {
     font-size: 60px;
     font-weight: 600;
@@ -140,6 +156,50 @@ nav ul li a:hover::after {
 
 .tab-links.active-link::after {
     width: 70%;
+}
+
+.problem-solving {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    color: #fff;
+}
+
+.problem-solving h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #b54769;
+}
+
+.problem-solving ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.problem-solving ul li {
+    margin: 0.5rem 0;
+    text-indent: -1.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.problem-solving ul li::before {
+    position: absolute;
+    left: 0;
+}
+
+.handles p {
+    margin: 0.5rem 0;
+}
+
+.handles a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.handles a:hover {
+    text-decoration: underline;
 }
 
 .tab-contents ul li {
@@ -198,6 +258,41 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
+.web-development {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #b54769;
+}
+
+.category {
+    margin-bottom: 1rem;
+}
+
+.category .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.category .icons i,
+.category .framework-name,
+.category .database-name {
+    font-size: 1.5rem;
+}
+
+.category .framework-name,
+.category .database-name {
+    font-weight: normal;
+    text-align: center;
+}
+
+.tick {
+    font-size: 1.5rem;
+    color: green;
+    margin-right: 1rem;
+    align-self: flex-start;
+}
 
 .tab-contents ul li .fa-python {
     color: skyblue;
@@ -470,6 +565,8 @@ nav ul li a:hover::after {
 
 }
 
+
+
 .tab-contents {
     display: none;
 }
@@ -715,7 +812,7 @@ nav .fa-solid {
 }
 
 /*--------------css for small screen-------------------*/
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 768px) {
 
 
 
@@ -726,6 +823,18 @@ nav .fa-solid {
 
     .header-text h1 {
         font-size: 25px;
+    }
+
+    .problem-solving {
+        padding: 1rem 0.5rem;
+    }
+
+    .problem-solving h2 {
+        font-size: 1.25rem;
+    }
+
+    .handles p {
+        font-size: 0.95rem;
     }
 
     nav .fa-solid {
@@ -780,6 +889,11 @@ nav .fa-solid {
         font-size: 14px;
     }
 
+
+    .about-description p {
+        font-size: 0.95rem;
+    }
+
     .tab-contents ul li {
         font-size: 14px;
         margin-right: 14px;
@@ -788,5 +902,15 @@ nav .fa-solid {
     .contact-left,
     .contact-right {
         flex-basis: 100%;
+    }
+
+    .category .icons i,
+    .category .framework-name,
+    .category .database-name {
+        font-size: 1.2rem;
+    }
+
+    .category p {
+        font-size: 1rem;
     }
 }
