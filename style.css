@@ -23,7 +23,7 @@ body {
 
 .yoe {
     margin-top: 5px;
-    color: #ff004f;
+    color: green;
     font-size: 30px;
 }
 
@@ -67,7 +67,6 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -90,7 +89,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: #ff004f;
+    color: green;
 }
 
 /*--------------About me-------------------*/
@@ -148,13 +147,14 @@ nav ul li a:hover::after {
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    color: gray;
 }
 
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: green;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -175,7 +175,7 @@ nav ul li a:hover::after {
 .problem-solving h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #b54769;
+    color: green;
 }
 
 .problem-solving ul {
@@ -194,6 +194,10 @@ nav ul li a:hover::after {
 .problem-solving ul li::before {
     position: absolute;
     left: 0;
+}
+ .tab-contents .experience{
+    color: green;
+    font-size: 20px;
 }
 
 .handles p {
@@ -215,12 +219,12 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: #b54769;
+    color: #fff;
     font-size: 20px;
 }
 
 .tab-contents ul li a {
-    color: mediumaquamarine;
+    color: green;
     font-size: 16px;
     text-decoration: none;
 }
@@ -265,20 +269,20 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
-.skills h2{
+.skills h2 {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    color: #b54769;
+    color: green;
 }
 
 .web-development {
     font-family: Arial, sans-serif;
     line-height: 1.5;
-    color: #b54769;
+    color: green;
 }
 
 .category {
-    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .category .icons {
@@ -315,7 +319,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li .fa-python:hover {
-    color: blue;
+    color: rgb(36, 35, 124);
     position: relative;
 }
 
@@ -496,7 +500,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li .fa-gitlab:hover {
-    color: lightblue;
+    color: orangered;
     position: relative;
 }
 
@@ -526,7 +530,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li .fa-docker:hover {
-    color: darkblue;
+    color: rgb(36, 35, 124);
     position: relative;
 }
 
@@ -578,12 +582,12 @@ nav ul li a:hover::after {
 
 }
 
-.education{
+.education {
     font-size: 18px;
 }
 
-.education .u-name{
-    color: #b54769;
+.education .u-name {
+    color: green;
     font-size: 20px;
 }
 
@@ -716,28 +720,27 @@ nav ul li a:hover::after {
 .personal-project-list div h2 {
     font-size: 30px;
     font-weight: 500;
-    color: goldenrod;
+    color: green;
 }
 
-.personal-project-list .tech{
-    color: goldenrod;
+.personal-project-list .tech {
+    color: green;
     padding-bottom: 5px;
     font-size: 20px;
 }
 
-.personal-project-list .desc{
+.personal-project-list .desc {
     font-size: 20px;
 }
 
 .personal-project-list .link {
     text-decoration: none;
     font-size: 20px;
-    color: goldenrod;
+    color: green;
     display: inline-block;
 }
 
 .personal-project-list div:hover {
-    background: #CD5C5C;
     transform: translateY(-10px);
 }
 
@@ -960,23 +963,23 @@ nav .fa-solid {
         gap: 20px;
     }
 
-    .personal-project-list .tech{
+    .personal-project-list .tech {
         font-size: 1rem;
     }
 
-    .personal-project-list .desc{
+    .personal-project-list .desc {
         font-size: 1rem;
     }
 
-    .personal-project-list .link{
+    .personal-project-list .link {
         font-size: 1rem;
     }
 
-    .education{
+    .education {
         font-size: 1rem;
     }
-    
-    .education .u-name{
+
+    .education .u-name {
         font-size: 1rem;
     }
 
