@@ -20,6 +20,13 @@ body {
     height: 18vh !important;
 }
 
+
+.yoe {
+    margin-top: 5px;
+    color: #ff004f;
+    font-size: 30px;
+}
+
 .container {
     padding: 5px 5px 100px 50px;
 }
