@@ -265,6 +265,12 @@ nav ul li a:hover::after {
     z-index: 1;
 }
 
+.skills h2{
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #b54769;
+}
+
 .web-development {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -572,7 +578,14 @@ nav ul li a:hover::after {
 
 }
 
+.education{
+    font-size: 18px;
+}
 
+.education .u-name{
+    color: #b54769;
+    font-size: 20px;
+}
 
 .tab-contents {
     display: none;
@@ -959,5 +972,12 @@ nav .fa-solid {
         font-size: 1rem;
     }
 
+    .education{
+        font-size: 1rem;
+    }
+    
+    .education .u-name{
+        font-size: 1rem;
+    }
 
 }
