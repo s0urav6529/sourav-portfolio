@@ -93,7 +93,7 @@ nav ul li a:hover::after {
     color: green;
 }
 
-.resume-active{
+.resume-active {
     background-color: green;
     border-radius: 15px;
     padding: 5px 10px;
@@ -114,16 +114,21 @@ nav ul li a:hover::after {
 
 .about-col-1 {
     flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 832px;
 }
 
 .about-col-1 img {
-    width: 90%;
-    height: 100%;
-    border-radius: 15px;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
 }
 
 .about-col-2 {
     flex-basis: 65%;
+    height: 832px;
 }
 
 .about-description {
@@ -610,7 +615,6 @@ nav ul li a:hover::after {
 /*--------------My services-------------------*/
 
 #services {
-    padding: 10px 0;
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
@@ -922,6 +926,11 @@ nav .fa-solid {
         font-size: 40px;
     }
 
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
     #about {
         padding: 10px 0;
         color: #ababab;
@@ -931,6 +940,7 @@ nav .fa-solid {
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
+        height: 0px;
     }
 
     .about-col-1 {
