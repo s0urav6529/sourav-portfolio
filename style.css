@@ -67,10 +67,11 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
+    background-color: green;
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 nav ul li a:hover::after {
@@ -78,7 +79,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    padding: 10px 0 !important;
+    padding: 100px 0 !important;
     font-size: 25px;
     text-align: center;
 }
@@ -92,10 +93,16 @@ nav ul li a:hover::after {
     color: green;
 }
 
+.resume-active{
+    background-color: green;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
 /*--------------About me-------------------*/
 
 #about {
-    padding-top: 250px!important;
+    padding-top: 250px !important;
     color: #ababab;
 }
 
@@ -195,7 +202,8 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
 }
- .tab-contents .experience{
+
+.tab-contents .experience {
     color: green;
     font-size: 20px;
 }
