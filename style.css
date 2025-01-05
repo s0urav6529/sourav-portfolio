@@ -93,7 +93,7 @@ nav ul li a:hover::after {
     color: green;
 }
 
-.resume-active{
+.resume-active {
     background-color: green;
     border-radius: 15px;
     padding: 5px 10px;
@@ -901,6 +901,7 @@ nav .fa-solid {
         background: lightslategray;
         position: fixed;
         top: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
