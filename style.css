@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
@@ -93,7 +91,7 @@ nav ul li a:hover::after {
     color: green;
 }
 
-.resume-active {
+.resume-active{
     background-color: green;
     border-radius: 15px;
     padding: 5px 10px;
@@ -117,7 +115,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 832px;
 }
 
 .about-col-1 img {
@@ -128,7 +125,6 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 65%;
-    height: 832px;
 }
 
 .about-description {
@@ -615,6 +611,7 @@ nav ul li a:hover::after {
 /*--------------My services-------------------*/
 
 #services {
+    padding: 10px 0;
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
@@ -899,15 +896,16 @@ nav .fa-solid {
     }
 
     nav ul {
-        background: #ff004f;
+        background: lightslategray;
         position: fixed;
         top: 0;
-        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right .5s;
+        display: flex;
+        flex-direction: column;
     }
 
     nav ul li {
@@ -926,11 +924,6 @@ nav .fa-solid {
         font-size: 40px;
     }
 
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-
     #about {
         padding: 10px 0;
         color: #ababab;
@@ -940,7 +933,6 @@ nav .fa-solid {
     .about-col-1,
     .about-col-2 {
         flex-basis: 100%;
-        height: 0px;
     }
 
     .about-col-1 {
