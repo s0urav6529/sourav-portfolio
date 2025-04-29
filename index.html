@@ -1,403 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourav Portfolio</title>
-    <link rel="icon" href="images/favicon.png" type="image/webp" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/s0urav6529/sourav-portfolio/style.css"> -->
+    <title>Sourav Majumder - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <div id="header">
-
-        <div class="container">
-            <nav>
-                <a href="#header">
-                    <img src="images/logo.png" class="logo" alt="">
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">S<span class="highlight">M</span></span>
                 </a>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#services">Service</a></li>
-                    <li><a href="#personal-project">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a class="resume-active" href="#resume">Resume</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active"><span>Home</span></a></li>
+                    <li><a href="#services"><span>Services</span></a></li>
+                    <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                    <li><a href="#about"><span>About</span></a></li>
+                    <li><a href="#resume"><span>Resume</span></a></li>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Sourav Majumder</span></h1>
-                <p>Software Engineer I @Smart Field Service</p>
-                <p class="yoe">1+ Year of Experience</p>
+            <div class="nav-buttons">
+                <a href="#about" class="contact-btn">Contact Me</a>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </div>
+</header>
 
-    <!--------------About------------------->
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+    <div class="mobile-nav-container">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+            <li><a href="#about"><i class="fas fa-contact-book"></i> Contact Me</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <div class="social-links-mobile">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <div id="about">
+    <!-- Home Section -->
+    <section id="home" class="home-section">
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/myPhoto.jpg">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hi, I'm <span class="highlight">Sourav Majumder</span></h1>
+                    <p class="highlight">Software Engineer I @Smart Field Service with 1+ Year of Experience.</p>
+                    <div class="home-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    </div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1><br>
-                    <div class="about-description">
-                        <p>
-                            A passionate tech enthusiast and problem solver currently working as a
-                            <b>Software Engineer I</b>, with a solid foundation in data structures and algorithms.
-                            I am deeply committed to expanding my expertise and sharpening my skills in these critical
-                            areas.
-                            I thrive on tackling complex problems, crafting innovative solutions, and continuously
-                            enhancing my
-                            understanding of software development principles.
+                <div class="home-image">
+                    <div class="profile-img">
+                        <img src="images/profile.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#services">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>Here are the services I offer to help bring your vision to life.</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and user-friendly websites using the latest technologies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Setting up online stores with secure payment gateways and inventory management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>SEO Optimization</h3>
+                    <p>Improving your website's visibility in search engines to drive more traffic.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Check out some of my recent projects and work.</p>
+            </div>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <img src="images/chat_app.png" alt="Chat App">
+                    <div class="portfolio-overlay">
+                        <h3>Chat App</h3>
+                        <p class="portfolio-item-content">This creates a dynamic environment where everyone can contribute in real time. The
+                            result is smoother, more collaborative interactions.</p>
+                        <br>
+                        <p >HTML,CSS,JavaScript,NodeJS,ExpressJS & MongoDB</p>
+                <a href="https://github.com/s0urav6529/chat-app">github(As a Full Stack
+                    Developer)</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/blog_kori.png" alt="Mobile Banking App">
+                    <div class="portfolio-overlay">
+                        <h3>Blog Kori</h3>
+                        <p>It’s a Full Stack Laravel Blog Project ,this project integrates both frontend and
+                            backend functionalities for creating, managing, sharing & commenting on blog content.
                         </p>
-                    </div>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Technical Skills </p>
-                        <p class="tab-links" onclick="opentab('Experience')">Work Experience </p>
-                        <p class="tab-links" onclick="opentab('Education')"> Education </p>
-                        <p class="tab-links" onclick="opentab('award_acheivement')"> Award & Acheivement </p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li>
-
-                                <div class="skills">
-                                    <h2>Problem Solving: </h2>
-                                    <ul>
-                                        <li>✅ Almost <b>2500+</b> (and counting) Data Structure & Mathematical related
-                                            problems solved on several online platforms.</li>
-                                        <li>✅ Participated in almost <b>260+</b> online & offline contests on various
-                                            platforms.</li>
-                                        <li>✅ Data Stuctures & Algorithms, OOP, System Design.</li>
-                                    </ul>
-                                    <div class="handles">
-                                        <p>
-                                            <b>Codeforces Max-rating:</b> 1421. Handle:
-                                            <a href="https://codeforces.com/profile/s0urav6529"
-                                                target="_blank">s0urav6529</a>
-                                        </p>
-                                        <p>
-                                            <b>Codechef Max-rating:</b> 1681. Handle:
-                                            <a href="https://www.codechef.com/users/codepro16"
-                                                target="_blank">codepro16</a>
-                                        </p>
-                                        <p>
-                                            <b>Leetcode Handle:</b>
-                                            <a href="https://leetcode.com/u/sourav_16/" target="_blank">sourav_16</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="web-development">
-                                <br>
-                                <h2>Development & DevOps:</h2>
-
-                                <div class="category">
-                                    <div class="icons">
-                                        <span>✅</span>
-                                        <i class="fa-brands fa-cplusplus"></i>
-                                        <i class="fa-brands fa-php"></i>
-                                        <i class="fa-brands fa-python"></i>
-                                        <i class="fa-brands fa-js"></i>
-                                    </div>
-                                </div>
-
-                                <div class="category">
-                                    <div class="icons">
-                                        <span>✅</span>
-                                        <i class="fa-brands fa-react"></i>
-                                        <i class="fa-brands fa-node"></i>
-                                        <span class="framework-name">Express.js</span>
-                                        <i class="fa-brands fa-laravel"></i>
-                                        <span class="framework-name">Django</span>
-                                    </div>
-                                </div>
-
-                                <div class="category">
-                                    <div class="icons">
-                                        <span>✅</span>
-                                        <span class="database-name">MySQL</span>
-                                        <span class="database-name">Firebase</span>
-                                        <span class="database-name">MongoDB</span>
-                                        <span class="database-name">PostgreSQL</span>
-                                    </div>
-                                </div>
-
-                                <div class="category">
-                                    <div class="icons">
-                                        <span>✅</span>
-                                        <span class="database-name">AWS s3</span>
-                                        <i class="fa-brands fa-git"></i>
-                                        <i class="fa-brands fa-github"></i>
-                                        <i class="fa-brands fa-gitlab"></i>
-                                        <i class="fa-brands fa-docker"></i>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li>
-                                <span class="experience">Software Engineer - I @Smart Field Service | Dec-2023 to
-                                    Present</span>
-                                <br>
-                                <span>✅</span>Contribute to build Real life software, built the backend architecture and
-                                API
-                                endpoints using NodeJS. <br>
-                                <span>✅</span>Debugging codes & perform software testing. <br>
-                                <span>✅</span>Built the core system features such as OTP authentication, payment and
-                                more. <br>
-                                <span>✅</span>Created documentations for multiple features and workflows. <br>
-                                <span>✅</span>Work with JavaScript, Jquery, NodeJS, ExpressJS, Django & different
-                                database like
-                                (mongodb,PostgreSQL,
-                                mysql, firebase).
-                            </li>
-                            <li>
-                                <span class="experience">Academic Internship @Brain Station 23 </span> <br>
-                                <span>✅</span> Gathered knowledge about office environment and software company.<br>
-                                <span>✅</span> Developed communication,networking and collaborate with professional
-                                software
-                                engineers.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents education" id="Education">
-                        <ul>
-                            <li>
-                                <span class="u-name">Dhaka University of Engineering & Technology (DUET)</span>
-                                <br>
-                                BSc, Computer Science and Engineering <br>CGPA : 3.71 / 4.00
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents education" id="award_acheivement">
-                        <ul>
-                            <li>
-                                <span class="u-name"> ICPC Asia West Continent Finalist 2021</span>
-                                <br>
-                                - Our team was the 19’th team from our country to participate internationally.
-                            </li>
-                            <li>
-                                <span class="u-name"> ICPC Asia Dhaka Regional Contest 2021</span>
-                                <br>
-                                - Our team achieved the 40’th rank out of 165 participating teams.
-                            </li>
-                            <li>
-                                <span class="u-name"> Inter University Programming Contest</span>
-                                <br>
-                                - BUET IUPC 2022- BUET , RUET IUPC 2022- RUET , AUST IUPC 2022- AUST.
-                            </li>
-                            <li>
-                                <span class="u-name"> Champion of Intra-DUET Programming Contest- 2022</span>
-                                <br>
-                                - Became the champion of Intra-DUET Programming Contest held by DUET Computer Society,
-                                DUET.
-                            </li>
-                            <li>
-                                <span class="u-name"> 2nd Runner-Up of Intra-DUET Programming Contest- 2023</span>
-                                <br>
-                                - Became the 2ndRunner-Up of Intra-DUET Programming Contest held by DUET Computer
-                                Society, DUET.
-                            </li>
-                            <li>
-                                <span class="u-name"> Ranked 3rd country-wise & 20’th globally at Codechef Starters 81 Division
-                                    2</span>
-                                <br>
-                                - Secured 3rd countrywise & 20th place globally among 1352 participants in this Codechef
-                                round.
-                            </li>
-                        </ul>
+                        <br>
+                        <p>HTML,CSS,PHP,JavaScript,Laravel & mysql</p>
+                        <a class="link" href="https://github.com/s0urav6529/laravel-blog-project/tree/sourav">github(As a
+                            Full Stack
+                            Developer)</a>
                     </div>
                 </div>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-item">
+                        <img src="images/portfolio.jpg" alt="Chat App">
+                        <div class="portfolio-overlay">
+                            <h3>Portfolio</h3>
+                    <a href="https://github.com/s0urav6529/sourav-portfolio/tree/main">github</a>
+                        </div>
+                    </div>
+                
             </div>
         </div>
-    </div>
+    </section>
 
-    <!--------------Services------------------->
-
-    <div id="services">
-        <h1 class="sub-title">My services</h1>
-        <div class="services-list">
-            <div>
-
-                <h2><i class="fa-brands fa-js"></i><i class="fa-brands fa-node"></i> <i class="fa-brands fa-react"></i>
-                </h2> <br>
-                <p>I specialize in building robust and efficient REST APIs for various
-                    software solutions to streamline website creation. My technical expertise includes:
-                    JavaScript (Node.js, Express.js), Python, c, c++ & database like (MongoDB, MySQL, Firebase) etc.
-                    With hands-on experience in these technologies, I can ensure seamless integration and optimal
-                    performance for your web projects.</p>
-                <br><a href="">Learn more</a>
-            </div>
-            <div>
-
-                <h2><i class="fa-brands fa-php"></i><i class="fa-brands fa-laravel"></i> </h2> <br>
-                <p>I have hands-on experience with Laravel, a robust PHP framework known for its elegant syntax and
-                    efficient workflow. I have worked extensively with Laravel’s features like routing, Blade
-                    templating, Eloquent ORM for database management, and authentication scaffolding. I’ve also
-                    integrated third-party packages like Laravel Breeze for streamlined authentication and Spatie
-                    for enhanced HTML and data management. My expertise extends to building scalable applications,
-                    optimizing query performance, and ensuring secure CSRF-protected forms.</p>
-                <br><a href="">Learn more</a>
-            </div>
-            <div>
-                <h2><i class="fa-brands fa-python"></i>
-                    Django
-                </h2>
-                <br>
-                <p>I have extensive experience working with Django, a high-level Python web framework that allows
-                    for the rapid development of secure and maintainable websites. I am well-versed in Django's MVC
-                    architecture, ORM for database interactions, and features like form handling, user
-                    authentication, and session management. I have successfully integrated third-party libraries and
-                    tools, such as crispy forms for enhancing form layouts, and have utilized Django’s powerful
-                    admin interface for content management. My expertise also includes building scalable
-                    applications with Django’s built-in security features, handling RESTful APIs, and deploying
-                    Django projects in production environments.</p>
-                <br><a href="">Learn more</a>
-            </div>
-            <div>
-
-                <h3>MYSQL Firebase MongoDB PostgreSQL</h3> <br>
-                <p>I have hands-on experience working with a variety of database systems, including MySQL, Firebase,
-                    MongoDB, and PostgreSQL. MySQL and PostgreSQL have provided me with a strong foundation in
-                    relational database management, while Firebase and MongoDB have allowed me to explore NoSQL
-                    solutions and real-time data handling. This diverse skill set has enabled me to design efficient
-                    database schemas, optimize queries, and manage large datasets effectively.</p>
-                <br><a href="">Learn more</a>
-            </div>
-        </div>
-    </div>
-
-    <!--------------Work------------------->
-
-    <div id="personal-project">
-        <h1 class="sub-title">Personal project</h1>
-        <div class="personal-project-list">
-
-            <div>
-                <h2><i class="fa-regular fa-comment"></i> Chat App</h2> <br>
-                <p class="desc">This creates a dynamic environment where everyone can contribute in real time. The
-                    result is smoother, more collaborative interactions.</p>
-                <br>
-                <p class="tech">HTML,CSS,JavaScript,NodeJS,ExpressJS & MongoDB</p>
-                <a class="link" href="https://github.com/s0urav6529/chat-app">github link (As a Full Stack
-                    Developer)</a>
-            </div>
-            <div>
-                <h2><i class="fa-solid fa-blog"></i> Blog Kori</h2> <br>
-                <p class="desc">It’s a Full Stack Laravel Blog Project ,this project integrates both frontend and
-                    backend functionalities to deliver a comprehensive platform for creating, managing, sharing & commenting on blog content.
-                </p>
-                <br>
-                <p class="tech">HTML,CSS,PHP,JavaScript,Laravel & mysql</p>
-                <a class="link" href="https://github.com/s0urav6529/laravel-blog-project/tree/sourav">github link (As a
-                    Full Stack
-                    Developer)</a>
-            </div>
-
-        </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-
-    <!--------------Contact------------------->
-
-    <div id="contact">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> sourav.cse18.duet@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +880 1863599784</p>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/s0urav6529/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/s0urav6529"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a id="resume" href="images/Sourav Majumder Resume.pdf" download class="btn resume">Download
-                        Resume</a>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400" alt="About Me">
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn submit">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>A passionate tech enthusiast and problem solver currently working as a Software Engineer I, with a solid foundation in data structures and algorithms. I am deeply committed to expanding my expertise and sharpening my skills in these critical areas. I thrive on tackling complex problems, crafting innovative solutions, and continuously enhancing my understanding of software development principles.</p>
+                    <div class="personal-info">
+                        <h3>Personal Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/s0urav6529/"><span>Sourav Majumder</span></a>
+                                
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>sourav.cse18.duet@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Dhaka, Bangladesh</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright <i class="fa-regular fa-copyright"></i> <span id="year"></span> Sourav Majumder</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Resume</h2>
+                <p>My education and professional experience.</p>
+            </div>
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <span class="date">2019 - 2023</span>
+                        <h4>Bachelor of Science in Computer Science & engineering</h4>
+                        <h5>Dhaka University of engineering & Technology</h5>
+                        <p>Graduated with honors. Specialized in Data structures and Algorithm.</p>
+                    </div>
+                    <br>
+                    <h3>Award & Acheivement</h3>
+                    <div class="resume-item">
+                        <span class="date">2022</span>
+                        <h4>ICPC Asia West Continent Finalist 2021</h4>
+                        <h5>Host- BUBT</h5>
+                        <p> Our team was the 19’th team from our country to participate internationally.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">2022</span>
+                        <h4>ICPC Asia Dhaka Regional Contest 2021</h4>
+                        <h5>Host- BUBT</h5>
+                        <p> Our team achieved the 40’th rank out of 165 participating teams.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Inter University Programming Contest</h4>
+                        <p> BUET IUPC 2022- BUET , RUET IUPC 2022- RUET , AUST IUPC 2022- AUST.</p>
+                    </div>
+                </div>
+                <div class="resume-column">
+                    <h3>Work Experience</h3>
+                    <div class="resume-item">
+                        <span class="date">Dec-2023 - Present</span>
+                        <h4>Software Engineer I</h4>
+                        <h5>Smart Field Service</h5>
+                        <p>1. Contribute to build Real life software, built the backend architecture and API endpoints.</p>
+                        <p>2. Built the core system features & analyze code Optimization.</p>
+                        <p>3. Created documentations for multiple features and workflows.</p>
+                        <p>4. Exploring & built AI tools.</p>
+                    </div>
+                    <div class="resume-item">
+                        <span class="date">Nov-2023 - Dec-2020</span>
+                        <h4>Academic Internship</h4>
+                        <h5>Brain Station 23</h5>
+                        <p>Gathered knowledge about office environment and software company.Developed communication,networking and collaborate with professional software engineers.</p>
+                    </div>
+                    <br>
+                    <h3>Problem Solving</h3>
+                    <div class="resume-item">
+                        <h4>Competitive Programmer</h4>
+                        <p>1. Almost 2500+ (and counting) Data Structure & Mathematical related problems solved on several online platforms.</p>
+                        <p>2. Participated in almost 260+ online & offline contests on various platforms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>Django</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">
+                            <span>DevOps(AWS s3, Git, GitHub, GitLab, Docker)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-cv">
+                    <a href="images/Sourav Majumder Resume.pdf" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy;<i id="year"></i> Sourav Majumder. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/s0urav6529/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/s0urav6529"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script>
+    <!-- JavaScript -->
+<script>
+    // Mobile Navigation Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+    hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+    });
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+    // Close mobile nav when clicking a link
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+        });
+    });
+
+    // Hide mobile nav when resizing to desktop
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            hamburger.classList.remove('active');
+            mobileNav.classList.remove('active');
+        }
+    });
+
+    // Active navigation on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
             }
+        });
+    });
 
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+    document.getElementById("year").textContent = new Date().getFullYear();
 
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG5wsi9rdFurbpxmzbSxh3sAQ-hsoL0YZCwdPTsv4wYyUgHwqwRaqbKAKvCvADhit5/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg");
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully !"
-                    setTimeout(function () {
-                        msg.innerHTML = "";
-                    }, 5000);
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+</script>
 </body>
-
 </html>
