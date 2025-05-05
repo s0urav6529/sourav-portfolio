@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Read Poem</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <main id="poem-content">
+    <h2>Loading...</h2>
+  </main>
+  <a href="index.html" class="back-btn">← Back</a>
+
+  <script src="assets/poems.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
+    const poem = poems.find(p => p.id === id);
+    const main = document.getElementById("poem-content");
+    if (poem) {
+      main.innerHTML = `
+        <h2>${poem.title}</h2>
+        <p>${poem.content.replace(/\n/g, "<br>")}</p>
+      `;
+    } else {
+      main.innerHTML = "<h2>Poem not found.</h2>";
+    }
+  </script>
+</body>
+</html>
