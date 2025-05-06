@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Read Poem</title>
-  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/poem.css" />
 </head>
 <body>
   <main id="poem-content">
     <h2>Loading...</h2>
   </main>
   <a href="index.html" class="back-btn">← Back</a>
+  <footer class="site-footer">
+    <p>&copy; Sourav Majumder —2025</p>
+  </footer>
 
   <script src="assets/poems.js"></script>
   <script>
@@ -20,7 +24,8 @@
     if (poem) {
       main.innerHTML = `
         <h2>${poem.title}</h2>
-        <p>${poem.content.replace(/\n/g, "<br>")}</p>
+        <h1>${poem.writter}</h1>
+        <p>${poem.content.replace(/\n/g, "<br><br>")}</p>
       `;
     } else {
       main.innerHTML = "<h2>Poem not found.</h2>";
